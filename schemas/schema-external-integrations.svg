@@ -10,10 +10,10 @@
 
   <rect width="1500" height="740" fill="#ffffff"/>
   <rect width="1500" height="740" fill="url(#grid)"/>
-  <g transform="translate(-17,-1) scale(1.05)">
+  <g transform="translate(-13,1) scale(1.05)">
 
   <!-- header -->
-  <text x="60" y="66" fill="#111111" font-size="26" font-weight="800" letter-spacing="-.5">СХЕМА ВНЕШНИХ ИНТЕГРАЦИЙ</text>
+  <text x="60" y="64" fill="#111111" font-size="26" font-weight="800" letter-spacing="-.5">СХЕМА ВНЕШНИХ ИНТЕГРАЦИЙ</text>
 
   <!-- ============ ROW 1: flow ============ -->
 
@@ -160,8 +160,8 @@
   <text x="1236" y="128" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">ВНЕШНИЕ</text>
   <text x="1236" y="144" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">ИНТЕГРАЦИИ</text>
   <g>
-    <rect x="1235" y="160" width="150" height="128" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
-    <text x="1310" y="182" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Входные данные</text>
+    <rect x="1235" y="160" width="150" height="108" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="180" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Входные данные</text>
     <text x="1243" y="202" fill="#374151" font-size="8.5">Просмотры и клики</text>
     <text x="1243" y="215" fill="#374151" font-size="8.5">Заказы</text>
     <text x="1243" y="228" fill="#374151" font-size="8.5">Возвраты и отмены</text>
@@ -169,24 +169,29 @@
     <text x="1243" y="254" fill="#374151" font-size="8.5">Рекламные расходы</text>
   </g>
   <g>
-    <rect x="1235" y="304" width="150" height="92" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
-    <text x="1310" y="326" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Авторизация</text>
-    <text x="1243" y="346" fill="#374151" font-size="8.5">Проверка подписи</text>
+    <rect x="1235" y="292" width="150" height="88" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="314" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Авторизация</text>
+    <text x="1243" y="334" fill="#374151" font-size="8.5">Единый вход</text>
+    <text x="1243" y="347" fill="#374151" font-size="8.5">Ролевая модель</text>
+    <text x="1243" y="360" fill="#374151" font-size="8.5">Проверка подписки</text>
   </g>
   <g>
-    <rect x="1235" y="412" width="150" height="80" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
-    <text x="1310" y="434" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Внешние площадки</text>
-    <text x="1243" y="454" fill="#374151" font-size="8.5">Wildberries</text>
-    <text x="1243" y="467" fill="#374151" font-size="8.5">Яндекс Маркет</text>
+    <rect x="1235" y="404" width="150" height="72" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="426" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Внешние площадки</text>
+    <text x="1243" y="446" fill="#374151" font-size="8.5">Wildberries</text>
+    <text x="1243" y="459" fill="#374151" font-size="8.5">Яндекс Маркет</text>
   </g>
   <g>
-    <rect x="1235" y="508" width="150" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
-    <text x="1310" y="530" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Мессенджеры / почта</text>
-    <text x="1243" y="550" fill="#374151" font-size="8.5">comms-api</text>
+    <rect x="1235" y="496" width="150" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="518" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Мессенджеры / почта</text>
+    <text x="1243" y="538" fill="#374151" font-size="8.5">comms-api</text>
   </g>
   <g>
-    <rect x="1235" y="592" width="150" height="56" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
-    <text x="1310" y="625" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Прочее API</text>
+    <rect x="1235" y="576" width="150" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="598" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Прочее API</text>
+    <text x="1243" y="618" fill="#374151" font-size="8.5">Метаданные</text>
+    <text x="1243" y="631" fill="#374151" font-size="8.5">Справочники</text>
   </g>
+
 </g>
 </svg>
