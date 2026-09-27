@@ -285,6 +285,32 @@
     transition: background .25s ease, border-color .25s ease, transform .25s ease;
   }
   .card-link:hover { background: rgba(76,201,240,.12); border-color: var(--cyan); transform: translateY(-2px); }
+  .card-actions { display: flex; gap: 10px; margin-top: 14px; }
+  .card-actions .card-link { margin-top: 0; flex: 1; justify-content: center; }
+
+  /* card thumbnail + lightbox */
+  .card-thumb {
+    border-radius: 12px; overflow: hidden; border: 1px solid var(--line);
+    background: #fff; margin-bottom: 16px; cursor: zoom-in;
+    transition: transform .25s ease, border-color .25s ease;
+  }
+  .card-thumb:hover { border-color: var(--cyan); transform: translateY(-2px); }
+  .card-thumb img { display: block; width: 100%; height: 150px; object-fit: cover; object-position: top; }
+  .lightbox {
+    position: fixed; inset: 0; z-index: 200; display: none;
+    align-items: center; justify-content: center;
+    background: rgba(5,8,18,.92); padding: 28px;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img {
+    max-width: 94vw; max-height: 90vh; border-radius: 10px;
+    box-shadow: 0 30px 90px rgba(0,0,0,.6); background: #fff;
+  }
+  .lightbox-close {
+    position: absolute; top: 16px; right: 26px; font-size: 34px; line-height: 1;
+    color: #fff; background: none; border: none; cursor: pointer; opacity: .8;
+  }
+  .lightbox-close:hover { opacity: 1; }
 
   /* reveal on scroll */
   .reveal { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
@@ -384,27 +410,42 @@
     <div class="cards">
       <div class="card">
         <div class="ribbon">GIFT</div>
-        <div class="icon">🏗️</div>
+        <div class="card-thumb" data-full="schemas/schema-template-service_with_infra.svg">
+          <img src="schemas/schema-template-service_with_infra.svg" alt="Схема шаблонного сервиса" loading="lazy">
+        </div>
         <h3>Схема шаблонного сервиса</h3>
         <p>Детали используемых инфраструктурных компонентов: из чего собран сервис, как связаны между собой и где что живёт.</p>
         <span class="status">Активировано</span>
-        <a class="card-link" href="https://office.o3.ru/my/personal/dgladilin/Documents/A/Cyfra/schema-analytics.svg" target="_blank" rel="noopener">Открыть схему ↗</a>
+        <div class="card-actions">
+          <a class="card-link" href="schemas/schema-template-service_with_infra.svg" target="_blank" rel="noopener">Открыть ↗</a>
+          <a class="card-link" href="schemas/schema-template-service_with_infra.svg" download>Скачать ↓</a>
+        </div>
       </div>
       <div class="card">
         <div class="ribbon">GIFT</div>
-        <div class="icon">📊</div>
+        <div class="card-thumb" data-full="schemas/schema-analytics.svg">
+          <img src="schemas/schema-analytics.svg" alt="Схема модулей ПО «Аналитика»" loading="lazy">
+        </div>
         <h3>Схема модулей ПО «Аналитика»</h3>
-        <p>Все модули, их границы и потоки данных — разложены по полочкам. Спорные зоны помечены, точки роста подсвечены.</p>
+        <p>Модули по разделам ЛК продавца — и сервисы, из которых состоит каждый. От воронки продаж до служебных модулей.</p>
         <span class="status">Активировано</span>
-        <a class="card-link" href="ССЫЛКА_НА_СХЕМУ_МОДУЛЕЙ_АНАЛИТИКА" target="_blank" rel="noopener">Открыть схему ↗</a>
+        <div class="card-actions">
+          <a class="card-link" href="schemas/schema-analytics.svg" target="_blank" rel="noopener">Открыть ↗</a>
+          <a class="card-link" href="schemas/schema-analytics.svg" download>Скачать ↓</a>
+        </div>
       </div>
       <div class="card">
         <div class="ribbon">GIFT</div>
-        <div class="icon">🔌</div>
+        <div class="card-thumb" data-full="schemas/schema-external-integrations.svg">
+          <img src="schemas/schema-external-integrations.svg" alt="Схема внешних интеграций" loading="lazy">
+        </div>
         <h3>Схема внешних интеграций</h3>
-        <p>Каждый внешний партнёр, каждый API и каждый webhook — на одном экране. Больше никаких «а куда пишет эта система?».</p>
+        <p>Весь контур на одном экране: клиент, сеть, приложение, данные, инфраструктура платформы и внешние интеграции.</p>
         <span class="status">Активировано</span>
-        <a class="card-link" href="ССЫЛКА_НА_СХЕМУ_ВНЕШНИХ_ИНТЕГРАЦИЙ" target="_blank" rel="noopener">Открыть схему ↗</a>
+        <div class="card-actions">
+          <a class="card-link" href="schemas/schema-external-integrations.svg" target="_blank" rel="noopener">Открыть ↗</a>
+          <a class="card-link" href="schemas/schema-external-integrations.svg" download>Скачать ↓</a>
+        </div>
       </div>
     </div>
 
@@ -431,6 +472,11 @@
 <footer class="git-strip">
   <span class="prompt">$</span> git log → <span class="hash">e18f0re:</span> happy birthday, daria · <span class="merged">merged to main ✅</span>
 </footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Закрыть">×</button>
+  <img src="" alt="Схема">
+</div>
 
 <script>
   /* ========================================================
@@ -580,6 +626,22 @@
 
   /* ---------- welcome burst ---------- */
   setTimeout(() => burst(innerWidth * .5, innerHeight * .3, 70), 1200);
+
+  /* ---------- schema lightbox ---------- */
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox.querySelector('img');
+  document.querySelectorAll('.card-thumb').forEach(t =>
+    t.addEventListener('click', () => {
+      lightboxImg.src = t.dataset.full;
+      lightbox.classList.add('open');
+    }));
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox || e.target.classList.contains('lightbox-close'))
+      lightbox.classList.remove('open');
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') lightbox.classList.remove('open');
+  });
 </script>
 </body>
 </html>
