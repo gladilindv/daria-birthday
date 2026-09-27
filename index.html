@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🎂 С Днём Рождения, Дарья — 18 навсегда!</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎁</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="🎂 С Днём Рождения, Дарья — 18 навсегда!">
+<meta property="og:description" content="Задача «Поздравить Дарью» наконец закрыта. Внутри — подарки, схемы и торт. const age = 18;">
+<meta property="og:image" content="og-cover.png">
+<meta property="og:url" content="https://gladilindv.github.io/daria-birthday/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e1a">
 <style>
   :root {
     --bg: #0a0e1a;
@@ -247,6 +254,7 @@
   .stat { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 30px; text-align: center; }
   .stat .num { font-family: var(--mono); font-size: 38px; font-weight: 700; color: var(--cyan); }
   .stat .lbl { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .stat .num { transition: none; }
 
   /* cake cta */
   .cake-btn {
@@ -287,6 +295,9 @@
   .card-link:hover { background: rgba(76,201,240,.12); border-color: var(--cyan); transform: translateY(-2px); }
   .card-actions { display: flex; gap: 10px; margin-top: 14px; }
   .card-actions .card-link { margin-top: 0; flex: 1; justify-content: center; }
+
+  .all-schemas { text-align: center; margin-bottom: 26px; }
+  .all-schemas .card-link { margin-top: 0; }
 
   /* card thumbnail + lightbox */
   .card-thumb {
@@ -406,6 +417,9 @@
     <div class="sec-head">
       <span class="tag">SERVICES</span>
       <h2>🎁 Подарки — уже в проде</h2>
+    </div>
+    <div class="all-schemas">
+      <a class="card-link" href="schemas/schemas.zip" download>⬇ Скачать все схемы архивом</a>
     </div>
     <div class="cards">
       <div class="card">
@@ -626,6 +640,30 @@
 
   /* ---------- welcome burst ---------- */
   setTimeout(() => burst(innerWidth * .5, innerHeight * .3, 70), 1200);
+
+  /* ---------- stats counter animation ---------- */
+  function animateNum(el, target, decimals, suffix) {
+    const dur = 1400, t0 = performance.now();
+    function tick(now) {
+      const p = Math.min((now - t0) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = (target * eased).toFixed(decimals) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+      else el.textContent = target.toFixed(decimals) + suffix;
+    }
+    requestAnimationFrame(tick);
+  }
+  const statsIO = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting || e.target.dataset.done) return;
+    e.target.dataset.done = '1';
+    const num = e.target.querySelector('.num');
+    const raw = num.textContent.trim();
+    if (raw === '∞') return; // бесконечность не анимируем
+    if (raw.endsWith('%')) animateNum(num, 99.99, 2, '%');
+    else if (raw.endsWith('ms')) animateNum(num, 0, 0, ' ms');
+    else if (raw === '18') animateNum(num, 18, 0, '');
+  }), { threshold: .3 });
+  document.querySelectorAll('.stat').forEach(el => statsIO.observe(el));
 
   /* ---------- schema lightbox ---------- */
   const lightbox = document.getElementById('lightbox');
