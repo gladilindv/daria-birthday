@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="740" viewBox="0 0 1500 740" font-family="-apple-system,'Segoe UI',Roboto,sans-serif">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#eef0f3"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect width="1500" height="740" fill="#ffffff"/>
+  <rect width="1500" height="740" fill="url(#grid)"/>
+  <g transform="translate(-17,-1) scale(1.05)">
+
+  <!-- header -->
+  <text x="60" y="66" fill="#111111" font-size="26" font-weight="800" letter-spacing="-.5">СХЕМА ВНЕШНИХ ИНТЕГРАЦИЙ</text>
+
+  <!-- ============ ROW 1: flow ============ -->
+
+  <!-- client -->
+  <rect x="60" y="100" width="180" height="270" rx="6" fill="#fafbfc" stroke="#c9ced6"/>
+  <text x="76" y="128" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">КЛИЕНТ</text>
+  <g>
+    <rect x="80" y="179" width="140" height="48" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="150" y="203" fill="#111111" font-size="14" font-weight="600" text-anchor="middle">Web App</text>
+    <text x="150" y="219" fill="#6b7280" font-size="9" text-anchor="middle">Браузер</text>
+  </g>
+  <g>
+    <rect x="80" y="243" width="140" height="48" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="150" y="267" fill="#111111" font-size="14" font-weight="600" text-anchor="middle">Mobile App</text>
+    <text x="150" y="283" fill="#6b7280" font-size="9" text-anchor="middle">iOS · Android</text>
+  </g>
+
+  <!-- edge -->
+  <rect x="280" y="100" width="160" height="270" rx="6" fill="#fafbfc" stroke="#c9ced6"/>
+  <text x="296" y="128" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">ИНФРАСТРУКТУРА</text>
+  <text x="296" y="144" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">СЕТИ</text>
+  <g>
+    <rect x="300" y="179" width="120" height="48" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="360" y="203" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">LB + WAF</text>
+    <text x="360" y="219" fill="#6b7280" font-size="9" text-anchor="middle">Nginx</text>
+  </g>
+  <g>
+    <rect x="300" y="243" width="120" height="48" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="360" y="272" fill="#111111" font-size="14" font-weight="600" text-anchor="middle">CDN</text>
+  </g>
+
+  <!-- app: modules inside K8S -->
+  <rect x="480" y="100" width="700" height="572" rx="6" fill="#fafbfc" stroke="#c9ced6"/>
+  <text x="496" y="128" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">ПО «АНАЛИТИКА»</text>
+  <rect x="494" y="144" width="672" height="212" rx="6" fill="#f6f8fa" stroke="#9aa1ad" stroke-dasharray="5 4"/>
+  <text x="508" y="164" fill="#6b7280" font-size="10" font-weight="700" letter-spacing="2" font-family="'SF Mono',monospace">K8S</text>
+
+  <rect x="506" y="172" width="204" height="172" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+  <text x="518" y="188" fill="#6b7280" font-size="9" font-weight="700" letter-spacing="1">МОЯ АНАЛИТИКА</text>
+  <text x="518" y="202" fill="#374151" font-size="8.5">Воронка продаж</text>
+  <text x="518" y="213" fill="#374151" font-size="8.5">Продажи моих товаров</text>
+  <text x="518" y="224" fill="#374151" font-size="8.5">Акции</text>
+  <text x="518" y="235" fill="#374151" font-size="8.5">Видимость в поиске</text>
+  <text x="518" y="246" fill="#374151" font-size="8.5">Планирование поставок</text>
+  <text x="518" y="257" fill="#374151" font-size="8.5">Локальность продаж</text>
+  <text x="518" y="268" fill="#374151" font-size="8.5">Выкупы</text>
+  <text x="518" y="279" fill="#374151" font-size="8.5">Качество работы</text>
+  <rect x="728" y="172" width="204" height="172" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+  <text x="740" y="188" fill="#6b7280" font-size="9" font-weight="700" letter-spacing="1">АНАЛИТИКА КОНКУРЕНТОВ</text>
+  <text x="740" y="202" fill="#374151" font-size="8.5">Категории</text>
+  <text x="740" y="213" fill="#374151" font-size="8.5">Бренды</text>
+  <text x="740" y="224" fill="#374151" font-size="8.5">Тренды</text>
+  <text x="740" y="235" fill="#374151" font-size="8.5">Конкуренты</text>
+  <text x="740" y="246" fill="#374151" font-size="8.5">Товары на Ozon</text>
+  <text x="740" y="257" fill="#374151" font-size="8.5">Товары на всех площадках</text>
+  <rect x="950" y="172" width="204" height="172" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+  <text x="962" y="188" fill="#6b7280" font-size="9" font-weight="700" letter-spacing="1">РАСШИРЕНИЕ АССОРТИМЕНТА</text>
+  <text x="962" y="202" fill="#374151" font-size="8.5">Поисковые запросы</text>
+  <text x="962" y="213" fill="#374151" font-size="8.5">Недостающие товары</text>
+
+  <!-- external integrations -->
+  <!-- ============ ROW 2: data + infra ============ -->
+
+  <!-- data: subblock inside ПО «Аналитика» -->
+  <rect x="494" y="372" width="672" height="286" rx="6" fill="#f6f8fa" stroke="#9aa1ad" stroke-dasharray="5 4"/>
+  <text x="510" y="400" fill="#6b7280" font-size="10" font-weight="700" letter-spacing="2" font-family="'SF Mono',monospace">ДАННЫЕ</text>
+  <g>
+    <rect x="506" y="416" width="204" height="100" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="526" y="461" fill="#111111" font-size="14" font-weight="600">PostgreSQL</text>
+    <text x="526" y="481" fill="#6b7280" font-size="9">PostgreSQL License</text>
+  </g>
+  <g>
+    <rect x="728" y="416" width="204" height="100" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="748" y="461" fill="#111111" font-size="14" font-weight="600">ClickHouse</text>
+    <text x="748" y="481" fill="#6b7280" font-size="9">Apache 2.0</text>
+  </g>
+  <g>
+    <rect x="950" y="416" width="204" height="100" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="970" y="461" fill="#111111" font-size="14" font-weight="600">Valkey</text>
+    <text x="970" y="481" fill="#6b7280" font-size="9">BSD-3-Clause</text>
+  </g>
+  <g>
+    <rect x="506" y="532" width="204" height="100" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="526" y="577" fill="#111111" font-size="14" font-weight="600">Memcached</text>
+    <text x="526" y="597" fill="#6b7280" font-size="9">BSD</text>
+  </g>
+  <g>
+    <rect x="728" y="532" width="204" height="100" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="748" y="577" fill="#111111" font-size="14" font-weight="600">Kafka</text>
+    <text x="748" y="597" fill="#6b7280" font-size="9">Apache 2.0</text>
+  </g>
+  <g>
+    <rect x="950" y="532" width="204" height="100" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="970" y="577" fill="#111111" font-size="14" font-weight="600">S3</text>
+    <text x="970" y="597" fill="#6b7280" font-size="9">S3-compatible</text>
+  </g>
+
+  <!-- infrastructure platform -->
+  <rect x="60" y="410" width="380" height="262" rx="6" fill="#fafbfc" stroke="#c9ced6"/>
+  <text x="76" y="438" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">ИНФРАСТРУКТУРА ПЛАТФОРМЫ</text>
+  <g>
+    <rect x="76" y="465" width="170" height="56" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="92" y="487" fill="#111111" font-size="13" font-weight="600">Конфигурация</text>
+    <text x="92" y="505" fill="#6b7280" font-size="9">RTC/ETCD</text>
+  </g>
+  <g>
+    <rect x="262" y="465" width="170" height="56" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="278" y="487" fill="#111111" font-size="13" font-weight="600">Секреты</text>
+    <text x="278" y="505" fill="#6b7280" font-size="9">Vault</text>
+  </g>
+  <g>
+    <rect x="76" y="529" width="170" height="56" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="92" y="551" fill="#111111" font-size="13" font-weight="600">Метрики</text>
+    <text x="92" y="569" fill="#6b7280" font-size="9">Prometheus</text>
+  </g>
+  <g>
+    <rect x="262" y="529" width="170" height="56" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="278" y="551" fill="#111111" font-size="13" font-weight="600">Дашборды</text>
+    <text x="278" y="569" fill="#6b7280" font-size="9">Grafana</text>
+  </g>
+  <g>
+    <rect x="76" y="593" width="170" height="56" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="92" y="615" fill="#111111" font-size="13" font-weight="600">Логи</text>
+    <text x="92" y="633" fill="#6b7280" font-size="9">OpenSearch</text>
+  </g>
+  <g>
+    <rect x="262" y="593" width="170" height="56" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="278" y="615" fill="#111111" font-size="13" font-weight="600">Трейсинг</text>
+    <text x="278" y="633" fill="#6b7280" font-size="9">Jaeger</text>
+  </g>
+
+  
+  <!-- ============ arrows ============ -->
+  <g stroke="#6b7280" stroke-width="1.5" fill="none">
+    <line x1="244" y1="235" x2="274" y2="235" marker-end="url(#arrow)"/>
+    <line x1="444" y1="235" x2="474" y2="235" marker-end="url(#arrow)"/>
+    <line x1="830" y1="358" x2="830" y2="368" marker-end="url(#arrow)"/>
+    <line x1="444" y1="541" x2="474" y2="541" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="1188" y1="235" x2="1212" y2="235" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ============ external integrations ============ -->
+  <rect x="1220" y="100" width="180" height="572" rx="6" fill="#fafbfc" stroke="#c9ced6"/>
+  <text x="1236" y="128" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">ВНЕШНИЕ</text>
+  <text x="1236" y="144" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">ИНТЕГРАЦИИ</text>
+  <g>
+    <rect x="1235" y="160" width="150" height="128" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="182" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Входные данные</text>
+    <text x="1243" y="202" fill="#374151" font-size="8.5">Просмотры и клики</text>
+    <text x="1243" y="215" fill="#374151" font-size="8.5">Заказы</text>
+    <text x="1243" y="228" fill="#374151" font-size="8.5">Возвраты и отмены</text>
+    <text x="1243" y="241" fill="#374151" font-size="8.5">Стоки</text>
+    <text x="1243" y="254" fill="#374151" font-size="8.5">Рекламные расходы</text>
+  </g>
+  <g>
+    <rect x="1235" y="304" width="150" height="92" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="326" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Авторизация</text>
+    <text x="1243" y="346" fill="#374151" font-size="8.5">Проверка подписи</text>
+  </g>
+  <g>
+    <rect x="1235" y="412" width="150" height="80" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="434" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Внешние площадки</text>
+    <text x="1243" y="454" fill="#374151" font-size="8.5">Wildberries</text>
+    <text x="1243" y="467" fill="#374151" font-size="8.5">Яндекс Маркет</text>
+  </g>
+  <g>
+    <rect x="1235" y="508" width="150" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="530" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Мессенджеры / почта</text>
+    <text x="1243" y="550" fill="#374151" font-size="8.5">comms-api</text>
+  </g>
+  <g>
+    <rect x="1235" y="592" width="150" height="56" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1310" y="625" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Прочее API</text>
+  </g>
+</g>
+</svg>

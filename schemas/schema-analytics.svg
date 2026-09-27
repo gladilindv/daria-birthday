@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780" font-family="-apple-system,'Segoe UI',Roboto,sans-serif">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#eef0f3"/>
+    </pattern>
+  </defs>
+
+  <rect width="1500" height="780" fill="#ffffff"/>
+  <rect width="1500" height="780" fill="url(#grid)"/>
+  <g transform="translate(-16,-4) scale(1.11)">
+
+  <!-- header -->
+  <text x="60" y="66" fill="#111111" font-size="26" font-weight="800" letter-spacing="-.5">СХЕМА МОДУЛЕЙ ПО «АНАЛИТИКА»</text>
+
+  <!-- сетка карточек h=60: title 1 стр y+20, 2 стр y+17/+31; svc 1 стр y+42, 2 стр y+42/+54; без svc title y+34 -->
+  <!-- ============ ZONE: modules ============ -->
+  <rect x="60" y="100" width="660" height="568" rx="6" fill="#fafbfc" stroke="#c9ced6"/>
+  <text x="76" y="128" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">МОДУЛИ</text>
+
+  <text x="76" y="158" fill="#9aa1ad" font-size="10" font-weight="700" letter-spacing="2">Моя аналитика</text>
+  <g>
+    <rect x="73" y="172" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="147" y="192" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Воронка продаж</text>
+    <text x="79" y="214" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-sales-funnel</text>
+  </g>
+  <g>
+    <rect x="235" y="172" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="309" y="189" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Продажи моих</text>
+    <text x="309" y="203" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">товаров</text>
+    <text x="241" y="214" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-charts</text>
+  </g>
+  <g>
+    <rect x="397" y="172" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="471" y="192" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Акции</text>
+    <text x="403" y="214" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-promo</text>
+    <text x="403" y="226" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-promo-codes</text>
+  </g>
+  <g>
+    <rect x="559" y="172" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="633" y="192" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Видимость в поиске</text>
+    <text x="565" y="214" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">search-query-analytics</text>
+  </g>
+  <g>
+    <rect x="73" y="238" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="147" y="255" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Планирование</text>
+    <text x="147" y="269" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">поставок</text>
+    <text x="79" y="280" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-accessibility</text>
+  </g>
+  <g>
+    <rect x="235" y="238" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="309" y="258" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Локальность продаж</text>
+    <text x="241" y="280" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-geo</text>
+  </g>
+  <g>
+    <rect x="397" y="238" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="471" y="258" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Выкупы</text>
+    <text x="403" y="280" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-returns</text>
+  </g>
+  <g>
+    <rect x="559" y="238" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="633" y="258" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Качество работы</text>
+    <text x="565" y="280" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">rating-facade</text>
+    <text x="565" y="292" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">account-health-service</text>
+  </g>
+
+  <text x="76" y="320" fill="#9aa1ad" font-size="10" font-weight="700" letter-spacing="2">Аналитика конкурентов</text>
+  <g>
+    <rect x="73" y="334" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="147" y="354" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Категории</text>
+    <text x="79" y="376" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">exar-api</text>
+    <text x="79" y="388" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">exar-aggregate</text>
+  </g>
+  <g>
+    <rect x="235" y="334" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="309" y="354" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Бренды</text>
+    <text x="241" y="376" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">exar-api</text>
+    <text x="241" y="388" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">exar-aggregate</text>
+  </g>
+  <g>
+    <rect x="397" y="334" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="471" y="354" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Тренды</text>
+    <text x="403" y="376" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-competitive-pos</text>
+  </g>
+  <g>
+    <rect x="559" y="334" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="633" y="354" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Конкуренты</text>
+    <text x="565" y="376" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-competitive-pos</text>
+  </g>
+  <g>
+    <rect x="73" y="400" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="147" y="420" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Товары на Ozon</text>
+    <text x="79" y="442" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-what-to-sell</text>
+  </g>
+  <g>
+    <rect x="235" y="400" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="309" y="417" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Товары на всех</text>
+    <text x="309" y="431" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">площадках</text>
+    <text x="241" y="452" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-what-to-sell</text>
+  </g>
+
+  <text x="76" y="482" fill="#9aa1ad" font-size="10" font-weight="700" letter-spacing="2">Расширение ассортимента</text>
+  <g>
+    <rect x="73" y="496" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="147" y="516" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Поисковые запросы</text>
+    <text x="79" y="538" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">searchstat-analytics</text>
+  </g>
+  <g>
+    <rect x="235" y="496" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="309" y="516" fill="#111111" font-size="12" font-weight="600" text-anchor="middle">Недостающие товары</text>
+    <text x="241" y="538" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">exa-products-api</text>
+  </g>
+
+  <text x="76" y="578" fill="#9aa1ad" font-size="10" font-weight="700" letter-spacing="2">Служебные модули</text>
+  <g>
+    <rect x="73" y="592" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="147" y="612" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Фронтенд</text>
+    <text x="79" y="634" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">sx-analytics-composer</text>
+    <text x="79" y="646" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">sx-analytics-render-api</text>
+  </g>
+  <g>
+    <rect x="235" y="592" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="309" y="612" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">ETL</text>
+    <text x="241" y="634" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-etl-stock</text>
+    <text x="241" y="646" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-etl-orders</text>
+  </g>
+  <g>
+    <rect x="397" y="592" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="471" y="612" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Премиум</text>
+    <text x="403" y="634" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-premium</text>
+  </g>
+  <g>
+    <rect x="559" y="592" width="148" height="60" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="633" y="612" fill="#111111" font-size="13" font-weight="600" text-anchor="middle">Метаданные</text>
+    <text x="565" y="634" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">seller-analytics-api</text>
+    <text x="565" y="646" fill="#8b949e" font-size="8.5" font-family="'SF Mono','Fira Code',Consolas,monospace">analytics-sku</text>
+  </g>
+
+  <!-- ============ ZONE: data ============ -->
+  <rect x="740" y="100" width="280" height="568" rx="6" fill="#fafbfc" stroke="#c9ced6"/>
+  <text x="756" y="128" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">ДАННЫЕ</text>
+  <g>
+    <rect x="760" y="155" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="780" y="185" fill="#111111" font-size="14" font-weight="600">PostgreSQL</text>
+    <text x="780" y="203" fill="#6b7280" font-size="9">PostgreSQL License</text>
+  </g>
+  <g>
+    <rect x="760" y="240" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="780" y="270" fill="#111111" font-size="14" font-weight="600">ClickHouse</text>
+    <text x="780" y="288" fill="#6b7280" font-size="9">Apache 2.0</text>
+  </g>
+  <g>
+    <rect x="760" y="325" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="780" y="355" fill="#111111" font-size="14" font-weight="600">Valkey</text>
+    <text x="780" y="373" fill="#6b7280" font-size="9">BSD-3-Clause</text>
+  </g>
+  <g>
+    <rect x="760" y="410" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="780" y="440" fill="#111111" font-size="14" font-weight="600">Memcached</text>
+    <text x="780" y="458" fill="#6b7280" font-size="9">BSD</text>
+  </g>
+  <g>
+    <rect x="760" y="495" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="780" y="525" fill="#111111" font-size="14" font-weight="600">Kafka</text>
+    <text x="780" y="543" fill="#6b7280" font-size="9">Apache 2.0</text>
+  </g>
+  <g>
+    <rect x="760" y="580" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="780" y="610" fill="#111111" font-size="14" font-weight="600">S3</text>
+    <text x="780" y="628" fill="#6b7280" font-size="9">S3-compatible</text>
+  </g>
+
+  <!-- ============ ZONE: infra ============ -->
+  <rect x="1040" y="100" width="280" height="568" rx="6" fill="#fafbfc" stroke="#c9ced6"/>
+  <text x="1056" y="128" fill="#6b7280" font-size="11" font-weight="700" letter-spacing="2">ИНФРАСТРУКТУРА</text>
+  <g>
+    <rect x="1060" y="155" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1080" y="185" fill="#111111" font-size="13" font-weight="600">Конфигурация</text>
+    <text x="1080" y="203" fill="#6b7280" font-size="9">RTC/ETCD</text>
+  </g>
+  <g>
+    <rect x="1060" y="240" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1080" y="270" fill="#111111" font-size="13" font-weight="600">Секреты</text>
+    <text x="1080" y="288" fill="#6b7280" font-size="9">Vault</text>
+  </g>
+  <g>
+    <rect x="1060" y="325" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1080" y="355" fill="#111111" font-size="13" font-weight="600">Метрики</text>
+    <text x="1080" y="373" fill="#6b7280" font-size="9">Prometheus</text>
+  </g>
+  <g>
+    <rect x="1060" y="410" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1080" y="440" fill="#111111" font-size="13" font-weight="600">Дашборды</text>
+    <text x="1080" y="458" fill="#6b7280" font-size="9">Grafana</text>
+  </g>
+  <g>
+    <rect x="1060" y="495" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1080" y="525" fill="#111111" font-size="13" font-weight="600">Логи</text>
+    <text x="1080" y="543" fill="#6b7280" font-size="9">OpenSearch</text>
+  </g>
+  <g>
+    <rect x="1060" y="580" width="240" height="68" rx="4" fill="#ffffff" stroke="#9aa1ad"/>
+    <text x="1080" y="610" fill="#111111" font-size="13" font-weight="600">Трейсинг</text>
+    <text x="1080" y="628" fill="#6b7280" font-size="9">Jaeger</text>
+  </g>
+</g>
+</svg>
