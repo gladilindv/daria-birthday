@@ -479,12 +479,16 @@
       <div class="stat"><div class="num">0 ms</div><div class="lbl">latency обнимашек</div></div>
       <div class="stat"><div class="num">∞</div><div class="lbl">улыбок в сутки</div></div>
       <div class="stat"><div class="num">18</div><div class="lbl">возраст — const, навсегда</div></div>
+      <div class="stat"><div class="num">10/10</div><div class="lbl">NPS команды</div></div>
+      <div class="stat"><div class="num">&lt; 5 min</div><div class="lbl">MTTR обид</div></div>
+      <div class="stat"><div class="num">instant</div><div class="lbl">recovery после понедельника</div></div>
+      <div class="stat"><div class="num">200 OK</div><div class="lbl">ответ на любой вопрос</div></div>
     </div>
   </div>
 </section>
 
 <footer class="git-strip">
-  <span class="prompt">$</span> git log → <span class="hash">e18f0re:</span> happy birthday, daria · <span class="merged">merged to main ✅</span>
+  <span class="prompt">$</span> git log → <span class="hash">e18f0re:</span> happy birthday, Daria · <span class="merged">merged to main ✅</span>
 </footer>
 
 <div class="lightbox" id="lightbox">
@@ -658,10 +662,12 @@
     e.target.dataset.done = '1';
     const num = e.target.querySelector('.num');
     const raw = num.textContent.trim();
-    if (raw === '∞') return; // бесконечность не анимируем
+    if (raw === '∞' || raw === '200 OK' || raw === 'instant' || raw === '18') return; // не анимируем
     if (raw.endsWith('%')) animateNum(num, 99.99, 2, '%');
     else if (raw.endsWith('ms')) animateNum(num, 0, 0, ' ms');
-    else if (raw === '18') animateNum(num, 18, 0, '');
+    else if (raw === '10/10') animateNum(num, 10, 0, '/10');
+    else if (raw === '< 5 min') animateNum(num, 5, 0, ' min');
+    else if (raw === '0') num.textContent = '0';
   }), { threshold: .3 });
   document.querySelectorAll('.stat').forEach(el => statsIO.observe(el));
 
